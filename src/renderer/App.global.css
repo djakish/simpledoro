@@ -1,0 +1,85 @@
+/*
+ * @NOTE: Prepend a `~` to css file paths that are in your node_modules
+ *        See https://github.com/webpack-contrib/sass-loader#imports
+ */
+ body {
+  position: relative;
+  color: white;
+  height: 100vh;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+  font-family: sans-serif;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+button {
+  color: #FFF;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+  border: 2px solid #FFF;
+  background-color: Transparent;
+  border-radius: 0px;
+  padding: 12px 20px;
+  display: inline-block;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 14px;
+  letter-spacing: 1px;
+  user-select: none;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);;
+  -webkit-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+  outline: none !important;
+}
+
+button:hover {
+  box-shadow: inset 0 100px 0 0 black;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+li {
+  list-style: none;
+}
+
+.time {
+  user-select: none;
+  text-decoration: none;
+  font-size: 5em;
+  align-self: center;
+  color: white;
+  font-family: "Lucida Console", Monaco, monospace;
+  height: fit-content;
+  width: fit-content;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+a:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+
+
+p{
+  font-size: 40pt;
+}
+
+
+
+
